@@ -1,6 +1,6 @@
 import { Selectors } from '../../support/all.js'
 
-const { datasetList, searchBox, dataset, datasetTitle, vehiclePositionsLInk, dateLastIngested, dateLastUpdated, releaseDate, copyrightDate } = Selectors
+const { datasetList, searchBox, dataset, datasetTitle, vehiclePositionsLink, dateLastIngested, dateLastUpdated, releaseDate, copyrightDate } = Selectors
 
 context('all', () => {
 
@@ -14,7 +14,7 @@ context('all', () => {
         cy.get(dataset).should('have.length', 1)
         cy.get(datasetTitle).click()
         cy.url().should('eq', 'https://discovery.smartcolumbusos.com/dataset/central_ohio_transit_authority/cota_stream')
-        cy.get(vehiclePositionsLInk)
+        cy.get(vehiclePositionsLink)
         cy.matchImageSnapshot('Details Page', {
             blackout: [
                 dateLastIngested,
