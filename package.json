@@ -1,0 +1,25 @@
+{
+  "name": "discovery-ui-smoke-tests",
+  "version": "1.0.0",
+  "description": "Smoke tests for Discovery UI",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:update": "cypress run --env updateSnapshots=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmartColumbusOS/discovery-ui-smoke-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmartColumbusOS/discovery-ui-smoke-tests/issues"
+  },
+  "homepage": "https://github.com/SmartColumbusOS/discovery-ui-smoke-tests#readme",
+  "devDependencies": {
+    "cypress": "^4.3.0",
+    "cypress-image-snapshot": "^3.1.1"
+  }
+}
