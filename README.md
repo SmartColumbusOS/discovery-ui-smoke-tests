@@ -8,6 +8,10 @@ Tests Discovery's application in production
 
 `npm install`
 
+### Swith environments
+
+Update baseUrl in cypress.json
+
 ### Run tests locally (headlessly)
 
 `npm run cypress:run`
