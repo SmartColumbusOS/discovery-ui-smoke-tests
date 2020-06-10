@@ -41,4 +41,4 @@ inside the container run
 this will replace the old snapshots with the new snapshots 
 then on your host machine in a separate terminal run:
 
-`docker cp discoveryST:"/app/src/cypress/snapshots/cota_ui" cypress/snapshots/`
+`docker cp discoveryST:"/app/src/cypress/snapshots/discovery_ui" cypress/snapshots/`

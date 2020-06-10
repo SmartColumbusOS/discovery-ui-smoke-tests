@@ -1,5 +1,8 @@
-  FROM cypress/base:8
-  COPY . /app/src
-  WORKDIR /app/src
-  RUN npm install
-  CMD [ "npm", "run", "cypress:run" ]
+FROM cypress/base:8
+
+WORKDIR /app/src
+COPY package.json ./
+RUN npm install
+
+COPY . ./
+CMD [ "npm", "run", "cypress:run" ]
