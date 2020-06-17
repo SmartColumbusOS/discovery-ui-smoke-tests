@@ -1,6 +1,7 @@
 export const Selectors = {
     datasetList: '[data-testid=dataset-list]',
     searchBox: '[data-testid=search]',
+    sortSelect: '[data-testid=sort-select]',
     dataset: 'data-card',
     datasetTitle: '.details > .title',
     collapser: '#dataset-preview > collapsable-box > div.header-container.open > detail-toggle-icon',
