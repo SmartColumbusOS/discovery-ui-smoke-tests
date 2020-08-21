@@ -1,6 +1,6 @@
 import { Selectors } from '../../support/all.js'
 
-const { datasetList, searchBox, datasetTitle, vehiclePositionsLink, dateLastIngested, dateLastUpdated, releaseDate, copyrightDate, previewTable, collapser, sortSelect } = Selectors
+const { datasetList, searchBox, vehiclePositionsLink, dateLastIngested, dateLastUpdated, releaseDate, copyrightDate, previewTable, collapser, sortSelect } = Selectors
 
 context('all', () => {
 
@@ -12,7 +12,7 @@ context('all', () => {
         })
         cy.get(sortSelect).select('Relevance')
         cy.get(searchBox).type('cota bus locations{enter}')
-        cy.get(datasetTitle).first().click()
+        cy.contains("COTA Real Time Bus Locations").click()
         cy.url().should('eq', 'https://discovery.smartcolumbusos.com/dataset/central_ohio_transit_authority/cota_stream')
         cy.get(vehiclePositionsLink)
         cy.get(collapser).click()
